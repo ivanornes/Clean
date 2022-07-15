@@ -16,7 +16,7 @@ public class NumberPresenter {
     }
     
     public func display(_ number: Number) {
-        numberView.display(number.description)
+        numberView.display(.init(number: number.description))
     }
 }
 

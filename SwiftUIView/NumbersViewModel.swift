@@ -20,7 +20,8 @@ public class NumbersViewModel: ObservableObject {
 }
 
 extension NumbersViewModel: NumberView {
-    public func display(_ number: String) {
-        self.number = number
+    
+    public func display(_ viewModel: NumberViewModel) {
+        self.number = viewModel.number
     }
 }

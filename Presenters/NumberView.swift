@@ -7,6 +7,14 @@
 
 import Foundation
 
+public struct NumberViewModel {
+    public let number: String
+    
+    init(number: String) {
+        self.number = number
+    }
+}
+
 public protocol NumberView {
-    func display(_ number: String)
+    func display(_ viewModel: NumberViewModel)
 }

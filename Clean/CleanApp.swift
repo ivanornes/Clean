@@ -11,7 +11,7 @@ import SwiftUI
 struct CleanApp: App {
     var body: some Scene {
         WindowGroup {
-            NumberFactory().makeNumberView()
+            NumberFactory().makeXibNumberView()
         }
     }
 }
