@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import Entities
 
-class DecrementNumberInteractor {
-    func decrement(_ number: Number) -> Number {
+public class DecrementNumberInteractor {
+    public init() {}
+    
+    public func decrement(_ number: Number) -> Number {
         Number(value: number.value - 1)
     }
 }

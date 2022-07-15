@@ -15,7 +15,3 @@ struct CleanApp: App {
         }
     }
 }
-
-extension Number: CustomStringConvertible {
-    var description: String { "\(value)" }
-}

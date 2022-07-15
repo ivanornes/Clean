@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import Entities
 
-class IncrementNumberInteractor {
-    func increment(_ number: Number) -> Number {
+public class IncrementNumberInteractor {
+    public init() {}
+    
+    public func increment(_ number: Number) -> Number {
         Number(value: number.value + 1)
     }
 }
