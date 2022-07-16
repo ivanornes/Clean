@@ -24,7 +24,6 @@
 		9F2929992882045400DAD9E9 /* NumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2928E72882002C00DAD9E9 /* NumberPresenter.swift */; };
 		9F2929A32882046200DAD9E9 /* UseCases.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9F2929A22882046200DAD9E9 /* UseCases.docc */; };
 		9F2929A92882046200DAD9E9 /* UseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F29299F2882046200DAD9E9 /* UseCases.framework */; };
-		9F2929AE2882046300DAD9E9 /* UseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2929AD2882046300DAD9E9 /* UseCasesTests.swift */; };
 		9F2929AF2882046300DAD9E9 /* UseCases.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2929A12882046200DAD9E9 /* UseCases.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F2929B62882046800DAD9E9 /* IncrementNumberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29289B2880BA5600DAD9E9 /* IncrementNumberInteractor.swift */; };
 		9F2929B72882046800DAD9E9 /* DecrementNumberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29289F2880BACA00DAD9E9 /* DecrementNumberInteractor.swift */; };
@@ -55,6 +54,8 @@
 		9F292A1928820C4500DAD9E9 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2929642882043000DAD9E9 /* Entities.framework */; };
 		9F292A1E2883044C00DAD9E9 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2929642882043000DAD9E9 /* Entities.framework */; };
 		9F292A1F2883044C00DAD9E9 /* Entities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2929642882043000DAD9E9 /* Entities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F292A24288304B500DAD9E9 /* IncrementNumberInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F292A23288304B500DAD9E9 /* IncrementNumberInteractorTests.swift */; };
+		9F292A262883057800DAD9E9 /* DecrementNumberInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F292A252883057800DAD9E9 /* DecrementNumberInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,7 +215,6 @@
 		9F2929A12882046200DAD9E9 /* UseCases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseCases.h; sourceTree = "<group>"; };
 		9F2929A22882046200DAD9E9 /* UseCases.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UseCases.docc; sourceTree = "<group>"; };
 		9F2929A82882046200DAD9E9 /* UseCasesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F2929AD2882046300DAD9E9 /* UseCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesTests.swift; sourceTree = "<group>"; };
 		9F2929BD2882047600DAD9E9 /* SwiftUIView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUIView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2929BF2882047600DAD9E9 /* SwiftUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUIView.h; sourceTree = "<group>"; };
 		9F2929C02882047600DAD9E9 /* SwiftUIView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftUIView.docc; sourceTree = "<group>"; };
@@ -227,6 +227,8 @@
 		9F2929F9288208FD00DAD9E9 /* XibViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewTests.swift; sourceTree = "<group>"; };
 		9F292A022882091B00DAD9E9 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		9F292A032882091B00DAD9E9 /* NumbersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumbersViewController.xib; sourceTree = "<group>"; };
+		9F292A23288304B500DAD9E9 /* IncrementNumberInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementNumberInteractorTests.swift; sourceTree = "<group>"; };
+		9F292A252883057800DAD9E9 /* DecrementNumberInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecrementNumberInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,7 +448,8 @@
 		9F2929AC2882046200DAD9E9 /* UseCasesTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F2929AD2882046300DAD9E9 /* UseCasesTests.swift */,
+				9F292A23288304B500DAD9E9 /* IncrementNumberInteractorTests.swift */,
+				9F292A252883057800DAD9E9 /* DecrementNumberInteractorTests.swift */,
 			);
 			path = UseCasesTests;
 			sourceTree = "<group>";
@@ -958,7 +961,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F2929AE2882046300DAD9E9 /* UseCasesTests.swift in Sources */,
+				9F292A24288304B500DAD9E9 /* IncrementNumberInteractorTests.swift in Sources */,
+				9F292A262883057800DAD9E9 /* DecrementNumberInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
