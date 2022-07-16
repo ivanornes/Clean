@@ -53,6 +53,8 @@
 		9F292A0F28820C3100DAD9E9 /* Presenters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2929812882044D00DAD9E9 /* Presenters.framework */; };
 		9F292A1428820C3B00DAD9E9 /* Presenters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2929812882044D00DAD9E9 /* Presenters.framework */; };
 		9F292A1928820C4500DAD9E9 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2929642882043000DAD9E9 /* Entities.framework */; };
+		9F292A1E2883044C00DAD9E9 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2929642882043000DAD9E9 /* Entities.framework */; };
+		9F292A1F2883044C00DAD9E9 /* Entities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2929642882043000DAD9E9 /* Entities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +149,13 @@
 			remoteGlobalIDString = 9F2929632882043000DAD9E9;
 			remoteInfo = Entities;
 		};
+		9F292A202883044C00DAD9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F29287B2880B8D400DAD9E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F2929632882043000DAD9E9;
+			remoteInfo = Entities;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -161,6 +170,17 @@
 				9F2929D7288204BC00DAD9E9 /* Entities.framework in Embed Frameworks */,
 				9F2929E3288204BC00DAD9E9 /* UseCases.framework in Embed Frameworks */,
 				9F2929DB288204BC00DAD9E9 /* Presenters.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F292A222883044C00DAD9E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F292A1F2883044C00DAD9E9 /* Entities.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +261,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F292A1E2883044C00DAD9E9 /* Entities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,10 +602,12 @@
 				9F29297D2882044D00DAD9E9 /* Sources */,
 				9F29297E2882044D00DAD9E9 /* Frameworks */,
 				9F29297F2882044D00DAD9E9 /* Resources */,
+				9F292A222883044C00DAD9E9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9F292A212883044C00DAD9E9 /* PBXTargetDependency */,
 			);
 			name = Presenters;
 			productName = Presenters;
@@ -1041,6 +1064,11 @@
 			isa = PBXTargetDependency;
 			target = 9F2929632882043000DAD9E9 /* Entities */;
 			targetProxy = 9F292A1B28820C4500DAD9E9 /* PBXContainerItemProxy */;
+		};
+		9F292A212883044C00DAD9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F2929632882043000DAD9E9 /* Entities */;
+			targetProxy = 9F292A202883044C00DAD9E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
